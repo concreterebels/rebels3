@@ -1,125 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://concrete-rebels.com//</loc>
+    <loc>https://concrete-rebels.com/</loc>
     <lastmod>2025-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://concreterebels.printify.me</loc>
+    <loc>https://concrete-rebels.com/#contact</loc>
+    <lastmod>2025-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://concrete-rebels.com/#products</loc>
     <lastmod>2025-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.tiktok.com/@concreterebels</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- Individual Product Pages -->
-  <url>
-    <loc>https://concreterebels.printify.me/product/19617058/neon-shadows-and-amp-leather-souls</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19617013/leather-and-amp-neon-fury</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19616720/where-shadows-roar</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19616629/the-howl-between-shadows</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19568537/ballet-in-the-dark-where-grace-meets-the-streets</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19568478/neon-nightfall-where-shadows-meet-the-dance</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19481759/the-rebel</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19481570/the-southpaw-saint</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19458407/echoes-of-her</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19434884/echo-on-the-wall</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19434994/the-last-song</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19430478/concrete-contact</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19452658/eyes-behind-silence</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://concreterebels.printify.me/product/19334187/graffiti-empress</loc>
-    <lastmod>2025-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
 
 </urlset>
