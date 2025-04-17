@@ -1,164 +1,159 @@
-/* General Reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and general styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #222;
+    background-color: #111;
     color: #fff;
-    padding: 0 20px;
+    line-height: 1.6;
 }
 
-/* Header Styling */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+/* Header Styles */
 header {
+    background: #222;
+    padding: 1rem;
     text-align: center;
-    padding: 20px 0;
-    background-color: #000;
 }
 
 header h1 {
-    font-size: 3rem;
-    letter-spacing: 3px;
-    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 10px 0;
+    list-style: none;
 }
 
 nav ul li {
-    font-size: 1.1rem;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
+    font-size: 1.2rem;
     color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #f39c12;
 }
 
-/* Banner Section */
+/* Banner Styles */
 .banner img {
     width: 100%;
     height: auto;
     display: block;
-    margin-top: 20px;
 }
 
 /* Product Section */
 .product-section {
-    padding: 40px 0;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .product-section h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #fff;
+    color: #f39c12;
+    margin-bottom: 2rem;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
-    justify-content: center;
+    padding: 0 20px;
 }
 
 .product-card {
     background-color: #333;
+    padding: 20px;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .product-card p {
-    text-align: center;
-    padding: 10px;
-    background-color: #444;
     font-size: 1.1rem;
-    margin: 0;
-    color: #fff;
-}
-
-/* Social Links Section */
-.socials {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-.socials p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-}
-
-.socials a {
-    color: #f39c12;
-    text-decoration: none;
     font-weight: bold;
 }
 
-.socials a:hover {
-    text-decoration: underline;
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 
-/* Footer Section */
-footer {
-    padding: 40px 0;
-    background-color: #000;
-    text-align: center;
+.product-card a {
+    color: #f39c12;
     font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product-card a:hover {
     color: #fff;
-    line-height: 1.5;
+}
+
+/* Footer Styles */
+footer {
+    background: #222;
+    padding: 1rem;
+    text-align: center;
+    color: #aaa;
+}
+
+footer a {
+    color: #f39c12;
+}
+
+footer a:hover {
+    color: #fff;
 }
 
 footer p {
-    margin: 20px 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin: 0.5rem 0;
 }
 
-/* Mobile Responsiveness */
-@media screen and (max-width: 768px) {
+/* Mobile Styles */
+@media (max-width: 768px) {
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
-    nav ul {
-        flex-direction: column;
+    nav ul li {
+        margin: 0 10px;
     }
 
     .product-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .product-card p {
+        font-size: 1rem;
     }
 
     footer p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
