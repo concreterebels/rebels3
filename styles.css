@@ -1,188 +1,209 @@
-/* Reset and Global Styles */
+/* General reset for body, margin, and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Basic body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #111;
-    color: #eee;
+    background-color: #1a1a1a;
+    color: #fff;
     line-height: 1.6;
+    margin: 0;
 }
 
+/* Header */
 header {
+    background-color: #111;
+    padding: 20px 0;
     text-align: center;
-    padding: 2rem 1rem;
-    background: #1a1a1a;
-    border-bottom: 2px solid #333;
 }
 
-header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.tagline {
-    font-size: 1.2rem;
-    color: #aaa;
-}
-
-nav {
-    background: #1a1a1a;
-    border-bottom: 2px solid #333;
-}
-
-nav ul {
-    list-style: none;
+.navbar {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
 }
 
-nav ul li {
-    margin: 0.5rem 1rem;
-}
-
-nav ul li a {
+.navbar-brand a {
+    color: #fff;
     text-decoration: none;
-    color: #eee;
+    font-size: 1.8em;
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    border: 1px solid #333;
-    border-radius: 5px;
-    transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-    background: #333;
+.navbar-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 
-.banner img {
-    width: 100%;
-    display: block;
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ff5c5c;
+}
+
+.hero-banner {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-banner h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero-banner p {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.product-section {
-    padding: 2rem 1rem;
+.shop-now {
+    background-color: #444;
     text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
 }
 
-.product-section h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+.shop-now h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+.shop-now p {
+    font-size: 1.2em;
 }
 
-.product-card {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 8px;
-    overflow: hidden;
+.shop-now a {
+    color: #ff5c5c;
     text-decoration: none;
-    color: #eee;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+.shop-now a:hover {
+    color: #fff;
 }
 
-.product-card img {
-    width: 100%;
-    display: block;
-}
-
-.product-card p {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-}
-
-#contact {
+.blog-preview {
     text-align: center;
-    padding: 2rem 1rem;
+    margin-bottom: 40px;
 }
 
-#contact h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+.blog-preview h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
 }
 
-#contact a {
-    color: #08f;
+.blog-preview p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.blog-link {
+    color: #ff5c5c;
+    font-weight: bold;
     text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.3s;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+.blog-link:hover {
+    color: #fff;
 }
 
-.brand-statement {
-    background: #1a1a1a;
-    padding: 2rem 1rem;
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 1.1rem;
-    border-top: 2px solid #333;
-}
-
+/* Footer */
 footer {
+    background-color: #222;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
-    background: #1a1a1a;
-    border-top: 2px solid #333;
-    font-size: 0.9rem;
+    padding: 20px;
+    font-size: 1em;
 }
 
-/* Rebel Journal Section */
-.blog-section {
-    padding: 2rem 1rem;
-    text-align: center;
+footer p {
+    margin-top: 10px;
 }
 
-.blog-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.blog-section p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    color: #ccc;
-}
+    .navbar-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-.blog-article {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    border-radius: 8px;
-    margin: 1rem auto;
-    padding: 1rem;
-    max-width: 800px;
-    text-align: left;
-}
+    .hero-banner h1 {
+        font-size: 2.5em;
+    }
 
-.blog-article h3 {
-    margin-bottom: 0.5rem;
-}
+    .hero-banner p {
+        font-size: 1.1em;
+    }
 
-.blog-article p {
-    color: #ddd;
-}
+    .about h2 {
+        font-size: 2em;
+    }
 
-.blog-article a {
-    color: #08f;
-    text-decoration: none;
-}
+    .about p {
+        font-size: 1em;
+    }
 
-.blog-article a:hover {
-    text-decoration: underline;
+    .shop-now h2 {
+        font-size: 1.8em;
+    }
+
+    .shop-now p {
+        font-size: 1em;
+    }
+
+    .blog-preview h2 {
+        font-size: 2em;
+    }
+
+    .blog-preview p {
+        font-size: 1.1em;
+    }
 }
