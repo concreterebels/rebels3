@@ -8,16 +8,14 @@
 /* Basic body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;  /* Fallback color */
+    background: #1a1a1a url('images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
     line-height: 1.6;
     margin: 0;
-    background: url('images/style.jpg');  /* Add background image */
-    background-size: cover;  /* Cover the whole screen */
-    background-position: center;  /* Center the image */
-    background-attachment: fixed;  /* Fix the background image on scroll */
+    position: relative;
+    z-index: 0;
 }
-
 /* Header */
 header {
     background-color: #111;
