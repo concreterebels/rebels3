@@ -8,33 +8,42 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background: url('/images/rebelbackground.jpg') no-repeat center center fixed;
+            background: url('/images/rebelbackground.jpg') no-repeat center center;
             background-size: cover;
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
+
         header, footer {
             background: rgba(0, 0, 0, 0.7);
             padding: 1rem;
             text-align: center;
         }
+
         .tagline {
             margin: 0;
             font-size: 1.2rem;
         }
+
         .rebels-action {
             padding: 2rem;
             background: rgba(0, 0, 0, 0.5);
             margin: 2rem;
             border-radius: 12px;
         }
+
         .action-images-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1rem;
         }
+
         .action-img img {
             width: 100%;
             height: auto;
@@ -42,13 +51,27 @@
             border: 2px solid #fff;
             border-radius: 8px;
         }
+
         footer a {
             color: #f4d03f;
             text-decoration: none;
             font-weight: bold;
         }
+
         footer a:hover {
             text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+                background-size: cover;
+            }
+
+            .rebels-action {
+                margin: 1rem;
+                padding: 1rem;
+            }
         }
     </style>
 </head>
