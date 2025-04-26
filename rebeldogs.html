@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Concrete Rebels - Rebel Dogs Unleashed. Street dogs, street style, pure attitude.">
+    <title>Rebel Dogs | Concrete Rebels</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: url('/images/grafback.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: scroll;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .tagline {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .rebels-dogs {
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .graffiti-heading {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            color: #f4d03f;
+            text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+            letter-spacing: 1px;
+        }
+
+        .dogs-images-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .dog-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .dog-img img:hover {
+            transform: scale(1.05);
+        }
+
+        footer a {
+            color: #f4d03f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+                background-size: cover;
+            }
+
+            .rebels-dogs {
+                margin: 1rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Concrete Rebels</h1>
+    <p class="tagline">Rebel Dogs — Born to Roam, Built to Rule</p>
+</header>
+
+<section id="rebels-dogs" class="rebels-dogs">
+    <h2 class="graffiti-heading">Unleash the Streets: Rebel Bandanas for the Boldest Dogs</h2>
+
+    <div class="dogs-images-grid">
+
+        <div class="dog-img">
+            <a href="https://concreterebels.printify.me/product/19856919/ruff-rebellion-street-flag-bandana" target="_blank">
+                <img src="/images/ruff.jpg" alt="Ruff Rebellion Bandana">
+            </a>
+        </div>
+
+        <div class="dog-img">
+            <a href="https://concreterebels.printify.me/product/19857123/neon-drip-rebellion-street-dog-bandana" target="_blank">
+                <img src="/images/neon.jpg" alt="Neon Drip Rebellion Bandana">
+            </a>
+        </div>
+
+        <div class="dog-img">
+            <a href="https://concreterebels.printify.me/product/19857222/neon-woof-streetlight-pink-bandana" target="_blank">
+                <img src="/images/woof.jpg" alt="Neon Woof Streetlight Bandana">
+            </a>
+        </div>
+
+        <div class="dog-img">
+            <a href="https://concreterebels.printify.me/product/19857335/urban-jungle-camo-drip-dog-bandana" target="_blank">
+                <img src="/images/jungle.jpg" alt="Urban Jungle Camo Drip Bandana">
+            </a>
+        </div>
+
+        <div class="dog-img">
+            <a href="https://concreterebels.printify.me/product/19857531/street-claw-rebel-dog-bandana" target="_blank">
+                <img src="/images/claw.jpg" alt="Street Claw Rebel Bandana">
+            </a>
+        </div>
+
+        <div class="dog-img">
+            <a href="https://concreterebels.printify.me/product/19857719/pawblast-street-splatter-bandana" target="_blank">
+                <img src="/images/pawblast.jpg" alt="Pawblast Street Splatter Bandana">
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p><a href="https://concreterebels.printify.me" target="_blank">🐾 Unleash the Rebel — Shop Dog Streetwear Now!</a></p>
+    <a class="home-link" href="index.html">🏠 Back to Home</a>
+</footer>
+
+</body>
+</html>
