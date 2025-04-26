@@ -4,154 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concrete Rebels Digital Zine</title>
-    <meta name="description" content="Explore Concrete Rebels Digital Zine: A gritty, urban showcase of raw street art, rebellious vibes, and exclusive digital content. Discover the latest graffiti, murals, and street culture all in one place.">
-    <meta name="keywords" content="street art, graffiti, urban culture, digital zine, concrete rebels, streetwear, murals, urban art, rebellion, concrete walls, neon, spray paint, graffiti culture">
-    <meta name="author" content="Concrete Rebels">
-    <meta property="og:title" content="Concrete Rebels Digital Zine">
-    <meta property="og:description" content="Explore Concrete Rebels Digital Zine: A gritty, urban showcase of raw street art, rebellious vibes, and exclusive digital content. Discover the latest graffiti, murals, and street culture all in one place.">
-    <meta property="og:image" content="path/to/your-image.jpg">
-    <meta property="og:url" content="https://www.yourwebsite.com/digital-zine">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Concrete Rebels Digital Zine">
-    <meta name="twitter:description" content="Explore Concrete Rebels Digital Zine: A gritty, urban showcase of raw street art, rebellious vibes, and exclusive digital content. Discover the latest graffiti, murals, and street culture all in one place.">
-    <meta name="twitter:image" content="path/to/your-image.jpg">
     <style>
         body {
-            background: url('magback.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('/images/magback.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
         }
 
-        header {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 2rem;
-            text-align: center;
-            font-size: 2rem;
+        .digital-zine {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        .tagline {
-            margin-top: 10px;
-            font-size: 1.2rem;
-        }
-
-        .gallery {
+        .zine-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
-        .image-card {
-            position: relative;
+        .zine-item {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
             overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            padding-bottom: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.7);
         }
 
-        .image-card img {
+        .zine-item img {
             width: 100%;
             height: auto;
             display: block;
         }
 
-        .caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            font-size: 1.2rem;
-            padding: 1rem;
-            width: 100%;
+        .zine-item p {
+            margin: 10px 0 0;
+            font-size: 1em;
+            padding: 0 10px;
         }
 
-        .cashapp-btn {
-            display: block;
+        .cashapp-button {
+            margin-top: 50px;
             text-align: center;
-            margin-top: 2rem;
-            background-color: #00B14F;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.5rem;
+        }
+
+        .cashapp-button a {
+            background: #00c244;
+            color: #fff;
             text-decoration: none;
-            border-radius: 8px;
-            width: fit-content;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
             animation: flash 1s infinite;
-        }
-
-        .cashapp-btn:hover {
-            background-color: #00A442;
-        }
-
-        .cashapp-btn:focus {
-            outline: none;
+            display: inline-block;
+            box-shadow: 0 0 15px #00c244;
         }
 
         @keyframes flash {
-            0% { background-color: #00B14F; }
-            50% { background-color: #00A442; }
-            100% { background-color: #00B14F; }
-        }
-
-        footer {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 1rem;
-            text-align: center;
-        }
-
-        footer a {
-            color: #f4d03f;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Concrete Rebels Digital Zine</h1>
-    <p class="tagline">Gritty, Rebellious, Raw. Urban Art in Motion.</p>
-</header>
+<section id="digital-zine" class="digital-zine">
+    <div class="zine-grid">
 
-<section class="gallery">
-    <div class="image-card">
-        <img src="magazine (1).jpg" alt="Street Art 1">
-        <div class="caption">"Art that speaks through the cracks of the city."</div>
+        <div class="zine-item">
+            <img src="/images/magazine (1).jpg" alt="Street Art 1">
+            <p>Concrete dreams never die.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (2).jpg" alt="Street Art 2">
+            <p>Spray it loud, spray it proud.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (3).jpg" alt="Street Art 3">
+            <p>Bricks bleed color when rebels rise.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (4).jpg" alt="Street Art 4">
+            <p>Walls don't talk — they scream.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (5).jpg" alt="Street Art 5">
+            <p>From the cracks, we create.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (6).jpg" alt="Street Art 6">
+            <p>Neon roots run deep.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (7).jpg" alt="Street Art 7">
+            <p>Grit painted in rebellion.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (8).jpg" alt="Street Art 8">
+            <p>Color floods where words fail.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (9).jpg" alt="Street Art 9">
+            <p>Art stitched from asphalt scars.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (10).jpg" alt="Street Art 10">
+            <p>Tag your truth. Leave a mark.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (11).jpg" alt="Street Art 11">
+            <p>Urban jungle. Rebel heart.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (12).jpg" alt="Street Art 12">
+            <p>Every splatter tells a story.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (13).jpg" alt="Street Art 13">
+            <p>Rebel ink for rebel souls.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (14).jpg" alt="Street Art 14">
+            <p>Brick-born legends never fade.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (15).jpg" alt="Street Art 15">
+            <p>Bold colors, broken rules.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (16).jpg" alt="Street Art 16">
+            <p>Rough edges, raw stories.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (17).jpg" alt="Street Art 17">
+            <p>Drip. Splatter. Rebel.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (18).jpg" alt="Street Art 18">
+            <p>Walls aren't blank. They're waiting.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (19).jpg" alt="Street Art 19">
+            <p>Paint the silence loud.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (20).jpg" alt="Street Art 20">
+            <p>Chaos writes the realest art.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (21).jpg" alt="Street Art 21">
+            <p>Colors clash. Legends rise.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (22).jpg" alt="Street Art 22">
+            <p>Stained concrete, sacred stories.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (23).jpg" alt="Street Art 23">
+            <p>Worn bricks. Fresh blood.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (24).jpg" alt="Street Art 24">
+            <p>Tag it like you mean it.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (25).jpg" alt="Street Art 25">
+            <p>Urban mythmakers, armed with paint.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (26).JPG" alt="Street Art 26">
+            <p>Sprayed dreams, heavy screams.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (27).jpg" alt="Street Art 27">
+            <p>Born from bricks, made for legends.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (28).jpg" alt="Street Art 28">
+            <p>Drips don't lie. Rebels don't quit.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (29).JPG" alt="Street Art 29">
+            <p>Ink the city with your heartbeat.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (30).jpg" alt="Street Art 30">
+            <p>Colors scream louder than sirens.</p>
+        </div>
+
     </div>
-    <div class="image-card">
-        <img src="magazine (2).jpg" alt="Street Art 2">
-        <div class="caption">"A mural as loud as the city that birthed it."</div>
+
+    <div class="cashapp-button">
+        <a href="https://cash.app/$donnieb8277" target="_blank">$donnieb8277 — Support the Movement 💥</a>
     </div>
-    <div class="image-card">
-        <img src="magazine (3).jpg" alt="Street Art 3">
-        <div class="caption">"Every spray tells a story of rebellion."</div>
-    </div>
-    <div class="image-card">
-        <img src="magazine (4).jpg" alt="Street Art 4">
-        <div class="caption">"From the streets to your screen – raw and untamed."</div>
-    </div>
-    <div class="image-card">
-        <img src="magazine (5).jpg" alt="Street Art 5">
-        <div class="caption">"Breaking boundaries, one stroke at a time."</div>
-    </div>
-    <!-- Repeat for additional images -->
 </section>
 
-<a href="https://cash.app/$donnieb8277" class="cashapp-btn" target="_blank">Support the Rebellion - CashApp: $donnieb8277</a>
+</body>
+</html>
 
 <footer>
     <p><a href="index.html">🏠 Back to Home</a></p>
