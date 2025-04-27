@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Rebels</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Tab Styles */
+        .tab-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
+
+        .tab-container a {
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.3em;
+            margin-left: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab-container a:hover {
+            background-color: #666;
+        }
+
+        /* Newsletter Section */
+        #newsletter-section {
+            display: none;
+            background: #111;
+            color: #fff;
+            padding: 80px 20px;
+            font-family: 'Bebas Neue', sans-serif;
+            text-align: center;
+            position: relative;
+            margin-top: 70px; /* To prevent the tab from overlapping */
+            z-index: 0;
+        }
+
+        #newsletter-section h1 {
+            font-size: 4em;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        #newsletter-section p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+            font-weight: lighter;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Trending Articles List */
+        .articles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .article {
+            background: #222;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: background 0.3s ease;
+        }
+
+        .article:hover {
+            background: #444;
+        }
+
+        .article h3 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            font-family: 'Bebas Neue', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #f44336;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .article p {
+            font-size: 1.1em;
+            color: #fff;
+            line-height: 1.5;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+</head>
+<body>
+
+    <!-- Tab for Newsletter -->
+    <div class="tab-container">
+        <a href="javascript:void(0);" onclick="toggleNewsletter()">Streetwear News</a>
+    </div>
+
+    <!-- Newsletter Section with Trending Articles -->
+    <section id="newsletter-section">
+        <h1>Streetwear News</h1>
+        <p>Stay ahead of the game with the latest in streetwear trends, news, and culture. Dive into the revolution!</p>
+
+        <div class="articles">
+            <!-- Article 1 -->
+            <div class="article">
+                <h3>Breaking Boundaries: How Streetwear is Dominating High Fashion</h3>
+                <p>The influence of streetwear on high fashion has been unstoppable. From Supreme to Off-White, this year is all about pushing limits and blending cultures.</p>
+            </div>
+            <!-- Article 2 -->
+            <div class="article">
+                <h3>Graphic Tees Are Back – And Bigger Than Ever</h3>
+                <p>The resurgence of bold, graphic tees is taking over. Learn how this staple piece is making a comeback with fresh designs and collaborations.</p>
+            </div>
+            <!-- Article 3 -->
+            <div class="article">
+                <h3>Rising Stars in Street Art: The Artists to Watch</h3>
+                <p>Meet the underground artists transforming city streets into canvases. Get the scoop on the most talked-about street art pieces of the year.</p>
+            </div>
+            <!-- Article 4 -->
+            <div class="article">
+                <h3>Vintage Streetwear Finds: The Hidden Gems You Need to Own</h3>
+                <p>From thrift stores to resale markets, discover the best vintage streetwear pieces that will elevate your wardrobe in 2025.</p>
+            </div>
+            <!-- Article 5 -->
+            <div class="article">
+                <h3>The Evolution of Sneaker Culture: What's Next?</h3>
+                <p>Sneakers are no longer just for running. Explore how sneaker culture is evolving and what the next big trends will be for 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript to toggle visibility of newsletter section -->
+    <script>
+        function toggleNewsletter() {
+            var section = document.getElementById('newsletter-section');
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
