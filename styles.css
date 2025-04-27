@@ -6,14 +6,15 @@
 }
 
 /* Basic body styling */
- body {
-            background: url('/images/style.jpg') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
+body {
+    background: url('/images/style.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
 /* Header */
 header {
     background-color: #111;
@@ -179,7 +180,27 @@ footer p {
     margin-top: 10px;
 }
 
-/* Responsive Design */
+/* General reset for tab styles */
+.tab-container {
+    display: flex;
+    flex-wrap: wrap;  /* Ensure tabs can wrap to the next line if needed */
+    justify-content: space-evenly; /* Distribute tabs evenly */
+    gap: 10px; /* Adjust space between tabs */
+}
+
+.tab {
+    padding: 15px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    flex: 1 1 auto;  /* Allow tabs to grow and shrink */
+    min-width: 120px; /* Minimum width for each tab */
+}
+
+/* On Mobile */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.8em;
@@ -203,6 +224,17 @@ footer p {
 
     .brand-statement p {
         font-size: 1.2em;
+    }
+
+    /* Tab Container and Tabs for Mobile */
+    .tab-container {
+        flex-direction: row;  /* Ensure tabs are displayed horizontally */
+        overflow-x: auto;  /* Allow horizontal scrolling if there's not enough space */
+    }
+
+    .tab {
+        flex: 0 0 auto;  /* Prevent the tabs from growing too much */
+        min-width: 100px; /* Reduce the minimum width on mobile */
     }
 }
 
