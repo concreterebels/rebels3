@@ -55,13 +55,13 @@
             padding: 0 10px;
         }
 
-        .venmo-button {
+        .cashapp-button, .venmo-button {
             margin-top: 50px;
             text-align: center;
         }
 
-        .venmo-button a {
-            background: #3D95CE; /* Venmo's blue color */
+        .cashapp-button a, .venmo-button a {
+            background: #00c244;
             color: #fff;
             text-decoration: none;
             padding: 15px 30px;
@@ -70,6 +70,11 @@
             font-weight: bold;
             animation: flash 1s infinite;
             display: inline-block;
+            box-shadow: 0 0 15px #00c244;
+        }
+
+        .venmo-button a {
+            background: #3D95CE; /* Venmo's blue color */
             box-shadow: 0 0 15px #3D95CE;
         }
 
@@ -107,7 +112,7 @@
             color: #fff;
         }
 
-        .rebel-rules, .rebel-journal, .article-block {
+        .rebel-rules, .rebel-journal {
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 10px;
@@ -129,48 +134,6 @@
             font-size: 1.1em;
             line-height: 1.6;
         }
-
-        .article-block p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .article-block h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-
-        .article-block .intro {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .article-block .body-text {
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #d1d1d1;
-        }
-
-        .home-button {
-            background: #333;
-            color: #fff;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 1.2em;
-            font-weight: bold;
-            display: inline-block;
-            text-align: center;
-            margin-top: 30px;
-            box-shadow: 0 0 15px #333;
-        }
-
-        .home-button:hover {
-            background: #555;
-        }
     </style>
 </head>
 <body>
@@ -180,61 +143,188 @@
         <p>Concrete Rebels Digital Zine: Art. Rebellion. Culture.</p>
     </div>
 
-    <!-- Article: Graffiti and Streetwear - 750 words -->
-    <div class="article-block">
-        <h2 class="section-title">Graffiti & Streetwear: The Art of Rebellion</h2>
-        <p class="intro">In the world of urban culture, graffiti and streetwear are two forces that refuse to be ignored. Together, they represent a powerful blend of artistic expression, rebellion, and identity. From spray cans to street corners, and from fashion runways to underground events, graffiti and streetwear have become synonymous with rebellion and the desire to break free from the confines of mainstream culture.</p>
-        <p class="body-text">The roots of graffiti trace back to the streets of New York City in the late 1960s and early 1970s. It was a form of self-expression that flourished in the underground, where artists used public spaces like subway trains and walls as their canvases. Graffiti was more than just a visual art form; it was a statement. It was a way to claim ownership of a space, to mark one's identity in a world that often ignored or marginalized them. Street artists were not just painting for the sake of aesthetics, they were making bold statements about power, culture, and resistance. They were giving a voice to the voiceless.</p>
-        <p class="body-text">Fast forward to today, and graffiti has become a global language. What was once considered vandalism is now a celebrated art form. Major cities like Berlin, London, and Paris have thriving street art scenes, and graffiti artists like Banksy have become household names. But it’s not just about the art itself; it’s about the culture that surrounds it. Graffiti has evolved into a symbol of defiance, rebellion, and freedom. It’s a visual representation of the fight against conformity.</p>
-        <p class="body-text">Meanwhile, streetwear has become a major force in the fashion industry. Born from the same rebellious spirit that birthed graffiti, streetwear is all about breaking the rules. It’s not about following trends; it’s about setting them. From its humble beginnings in the skate and hip-hop cultures of the 80s and 90s, streetwear has risen to become a cultural powerhouse. Brands like Supreme, Off-White, and Stüssy have gone from being underground names to global icons.</p>
-        <p class="body-text">What makes streetwear so powerful is its ability to blur the lines between fashion and art. Streetwear is more than just clothing; it’s an expression of identity, a way to communicate who you are and where you come from. Just like graffiti, streetwear is often a visual statement. Bold graphics, logo-heavy designs, and experimental typography all play a role in the streetwear aesthetic. Much like graffiti, streetwear has become a canvas for rebellious expression.</p>
-        <p class="body-text">But it’s not just about aesthetics. Both graffiti and streetwear have deep cultural and social roots. Graffiti emerged as a way for marginalized communities to make their voices heard, while streetwear grew out of youth subcultures looking for an alternative to high fashion. Both movements were born from a need for self-expression, for claiming space in a world that often tried to suppress individuality.</p>
-        <p class="body-text">Today, the relationship between graffiti and streetwear is undeniable. Many of the most iconic streetwear brands incorporate elements of graffiti into their designs, from bold, spray-paint-like fonts to graffiti-inspired artwork. Likewise, many graffiti artists have embraced streetwear as a way to bring their art to a wider audience. The crossover between the two cultures has given rise to collaborations between high-end fashion houses and street artists, resulting in limited-edition collections that merge art and fashion in new and exciting ways.</p>
-        <p class="body-text">But the connection between graffiti and streetwear goes beyond just aesthetics and commerce. At its core, both graffiti and streetwear are about defying norms and challenging the status quo. They are about rejecting the mainstream and creating something new. They are a way for individuals to assert their own identity, to stand out in a world that often tries to make them conform. And in doing so, they give voice to a generation of rebels who are unafraid to make their mark on the world.</p>
-        <p class="body-text">For the Concrete Rebels brand, this fusion of graffiti and streetwear is the essence of what it stands for. It’s about making bold, unapologetic statements through fashion and art. It’s about taking the streets back and turning them into a canvas, a stage, and a playground for creativity and rebellion. Whether it’s a graffiti tag on a wall or a bold logo on a hoodie, Concrete Rebels embodies the spirit of those who dare to be different and are not afraid to express themselves in the most radical ways.</p>
+    <!-- Image Section 1-6 -->
+    <div class="zine-grid">
+        <div class="zine-item">
+            <img src="/images/magazine (1).jpg" alt="Street Art 1">
+            <p>Concrete dreams never die.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (2).jpg" alt="Street Art 2">
+            <p>Spray it loud, spray it proud.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (3).jpg" alt="Street Art 3">
+            <p>Bricks bleed color when rebels rise.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (4).jpg" alt="Street Art 4">
+            <p>Walls don't talk — they scream.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (5).jpg" alt="Street Art 5">
+            <p>From the cracks, we create.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (6).jpg" alt="Street Art 6">
+            <p>Art for the bold.</p>
+        </div>
+    </div>
+
+    <!-- Rebel Rules Section -->
+    <div class="divider"></div>
+    <div class="rebel-rules">
+        <h2 class="section-title">Rebel Rules</h2>
+        <ul>
+            <li>Embrace chaos.</li>
+            <li>Defy expectations.</li>
+            <li>Never settle for ordinary.</li>
+            <li>Take risks, make mistakes.</li>
+            <li>Stay true to your art.</li>
+            <li>Rebellion is freedom.</li>
+        </ul>
+    </div>
+
+    <!-- Image Section 7-12 -->
+    <div class="zine-grid">
+        <div class="zine-item">
+            <img src="/images/magazine (7).jpg" alt="Street Art 7">
+            <p>The city is a canvas.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (8).jpg" alt="Street Art 8">
+            <p>Speak in color.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (9).jpg" alt="Street Art 9">
+            <p>Art without boundaries.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (10).jpg" alt="Street Art 10">
+            <p>Under the radar, above the rest.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (11).jpg" alt="Street Art 11">
+            <p>Rebellion on every corner.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (12).jpg" alt="Street Art 12">
+            <p>Lines drawn in the sand, painted on walls.</p>
+        </div>
+    </div>
+
+    <!-- Rebel Journal Section -->
+    <div class="divider"></div>
+    <div class="rebel-journal">
+        <h2 class="section-title">Rebel Journal</h2>
+        <p>Every rebel has a story to tell. Street art is a language spoken in bursts of spray paint, from the alleyways to the highways. It’s a diary of rebellion, documenting the untold stories of a culture fighting to be heard.</p>
+    </div>
+
+    <!-- Image Section 13-18 -->
+    <div class="zine-grid">
+        <div class="zine-item">
+            <img src="/images/magazine (13).jpg" alt="Street Art 13">
+            <p>Art that screams freedom.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (14).jpg" alt="Street Art 14">
+            <p>Rebel colors, rebel hearts.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (15).jpg" alt="Street Art 15">
+            <p>Concrete jungle. Wild art.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (16).jpg" alt="Street Art 16">
+            <p>Born in the streets. Painted for the world.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (17).jpg" alt="Street Art 17">
+            <p>Walls carry more than just paint.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (18).jpg" alt="Street Art 18">
+            <p>Graffiti is a scream in a silent city.</p>
+        </div>
+    </div>
+
+    <!-- Rebel Revolution Section -->
+    <div class="divider"></div>
+    <div class="rebel-rules">
+        <h2 class="section-title">Rebel Revolution</h2>
+        <p>The rebellion is not just about the walls we paint on, but the minds we challenge. It's a movement — a culture that refuses to be boxed in, to be controlled. We are the rebels of the new age, breaking free from the status quo, creating something entirely new and powerful.</p>
+    </div>
+
+    <!-- Image Section 19-24 -->
+    <div class="zine-grid">
+        <div class="zine-item">
+            <img src="/images/magazine (19).jpg" alt="Street Art 19">
+            <p>Art is rebellion. Rebellion is art.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (20).jpg" alt="Street Art 20">
+            <p>Live loud, paint bold.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (21).jpg" alt="Street Art 21">
+            <p>Unseen, but felt.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (22).jpg" alt="Street Art 22">
+            <p>Every tag tells a story.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (23).jpg" alt="Street Art 23">
+            <p>Art born in rebellion.</p>
+        </div>
+        <div class="zine-item">
+            <img src="/images/magazine (24).jpg" alt="Street Art 24">
+            <p>When the street speaks, we listen.</p>
+        </div>
+    </div>
+
+    <!-- Final Section -->
+    <div class="divider"></div>
+    <div class="rebel-journal">
+        <h2 class="section-title">Final Thoughts</h2>
+        <p>Street art, streetwear, and rebellion aren’t just about breaking rules — they're about making new ones. Concrete Rebels stands as a testament to this movement, inspiring you to embrace your own rebellion and express it in every brushstroke, every spray, every piece of gear you wear.</p>
     </div>
 
     <!-- Image Section 25-30 -->
     <div class="zine-grid">
         <div class="zine-item">
             <img src="/images/magazine (25).jpg" alt="Street Art 25">
-            <p>Shatter the norms, shape your world.</p>
+            <p>The city is our canvas.</p>
         </div>
         <div class="zine-item">
-            <img src="/images/mag26.JPG" alt="Street Art 26">
-            <p>Breaking chains, one spray at a time.</p>
+            <img src="/images/magazine (26).jpg" alt="Street Art 26">
+            <p>Concrete and colors, rebels unite.</p>
         </div>
         <div class="zine-item">
             <img src="/images/magazine (27).jpg" alt="Street Art 27">
-            <p>The city is a playground for revolutionaries.</p>
+            <p>In every corner, there’s art.</p>
         </div>
         <div class="zine-item">
-            <img src="/images/mag28.JPG" alt="Street Art 28">
-            <p>Change is inevitable. Rebellion is constant.</p>
+            <img src="/images/magazine (28).jpg" alt="Street Art 28">
+            <p>Rebel ink, rebel soul.</p>
         </div>
         <div class="zine-item">
-            <img src="/images/mag29.jpg" alt="Street Art 29">
-            <p>Revolution through art. Art through revolution.</p>
+            <img src="/images/magazine (29).jpg" alt="Street Art 29">
+            <p>Paint the revolution.</p>
         </div>
         <div class="zine-item">
             <img src="/images/magazine (30).jpg" alt="Street Art 30">
-            <p>The rebel’s mark is never erased.</p>
+            <p>Art that breaks boundaries.</p>
         </div>
     </div>
 
     <!-- Venmo Button -->
     <div class="venmo-button">
-        <a href="https://venmo.com/YourVenmoLink">Support us on Venmo</a>
+        <a href="https://venmo.com/Don-Barnes-70" target="_blank">Support the Rebellion</a>
     </div>
 
-    <!-- Home Button -->
-    <div class="home-button">
-        <a href="/">Home</a>
-    </div>
-
-    <!-- Footer -->
     <footer>
-        <p>Follow us on <a href="https://twitter.com/ConcreteRebels">Twitter</a> for more updates!</p>
+        <a href="https://www.concrete-rebels.com">Back to Concrete Rebels</a>
     </footer>
 </section>
 
